@@ -14,6 +14,11 @@ def index():
 def about():
     return render_template("about.html")
 
+# Contact route decorator
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
+
 
 # Thing to tun a server (as I understand at this point)
 if __name__ == "__main__":
