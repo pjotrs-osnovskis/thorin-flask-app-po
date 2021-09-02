@@ -4,20 +4,30 @@ from flask import Flask, render_template
 # Creating an instance of it and storing in a variable
 app = Flask(__name__)
 
+
 # Index route decorator
 @app.route("/")
 def index():
     return render_template("index.html")
+
 
 # About route decorator
 @app.route("/about")
 def about():
     return render_template("about.html")
 
+
 # Contact route decorator
 @app.route("/contact")
 def contact():
     return render_template("contact.html")
+
+
+# Careers route decorator
+@app.route("/careers")
+def careers():
+    return render_template("careers.html")
+
 
 
 # Thing to tun a server (as I understand at this point)
