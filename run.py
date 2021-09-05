@@ -14,23 +14,23 @@ def index():
 # About route decorator
 @app.route("/about")
 def about():
-    return render_template("about.html")
+    return render_template("about.html", page_title="About")
 
 
 # Contact route decorator
 @app.route("/contact")
 def contact():
-    return render_template("contact.html")
+    return render_template("contact.html", page_title="Contact")
 
 
 # Careers route decorator
 @app.route("/careers")
 def careers():
-    return render_template("careers.html")
+    return render_template("careers.html", page_title="Careers")
 
 
 
-# Thing to tun a server (as I understand at this point)
+# Live Preview
 if __name__ == "__main__":
     app.run(
         host=os.environ.get("IP", "0.0.0.0"),
