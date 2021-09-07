@@ -13,157 +13,20 @@
     leave on other business, welcomed a fourteenth to fill into their party.
 </p>
 
-<div class="row featurette">
-    <div class="col-md-7">
-        <h3>{{ company[0]["name"] }}</h3>
-        <p>{{ company[0]["description"] }}</p>
-    </div>
-    <div class="col-md-5">
-        <img src="{{ company[0]['img_src'] }}"
-            alt="{{ company[0]['name'] }} Of The Hobbit">
-    </div>
-</div>
+    {% for member in company %}
 
-<div class="row featurette">
-    <div class="col-md-5">
-        <img src="{{ company[1]['img_src'] }}"
-            alt="{{ company[1]['name'] }} Of The Hobbit">
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h3>{{ member.name }}</h3>
+            <p>{{ member.description }}</p>
+        </div>
+        <div class="col-md-5">
+            <img src="{{ member.img_src }}"
+                alt="{{ member.name }} Of The Hobbit"
+                class="featurette-image image-responsive">
+        </div>
     </div>
-    <div class="col-md-7">
-        <h3>{{ company[1]["name"] }}</h3>
-        <p>{{ company[1]["description"] }}</p>
-    </div>
-</div>
+    <hr class="featurette-divider">
+    {% endfor %}
 
-<div class="row featurette">
-    <div class="col-md-7">
-        <h3>{{ company[2]["name"] }}</h3> 
-        <p>{{ company[2]["description"] }}</p>
-    </div>
-    <div class="col-md-5">
-        <img src="{{ company[2]['img_src'] }}"
-            alt="{{ company[2]['name'] }} Of The Hobbit">
-    </div>
-</div>
-
-<div class="row featurette">
-    <div class="col-md-5">
-        <img src="{{ company[3]['img_src'] }}"
-            alt="{{ company[3]['name'] }} Of The Hobbit">
-    </div>
-    <div class="col-md-7">
-        <h3>{{ company[3]["name"] }}</h3>
-        <p>{{ company[3]["description"] }}</p>
-    </div>
-</div>
-
-<div class="row featurette">
-    <div class="col-md-7">
-        <h3>{{ company[4]["name"] }}</h3> 
-        <p>{{ company[4]["description"] }}</p>
-    </div>
-    <div class="col-md-5">
-        <img src="{{ company[4]['img_src'] }}"
-            alt="{{ company[4]['name'] }} Of The Hobbit">
-    </div>
-</div>
-
-<div class="row featurette">
-    <div class="col-md-5">
-        <img src="{{ company[5]['img_src'] }}"
-            alt="{{ company[5]['name'] }} Of The Hobbit">
-    </div>
-    <div class="col-md-7">
-        <h3>{{ company[5]["name"] }}</h3>
-        <p>{{ company[5]["description"] }}</p>
-    </div>
-</div>
-
-<div class="row featurette">
-    <div class="col-md-7">
-        <h3>{{ company[6]["name"] }}</h3> 
-        <p>{{ company[6]["description"] }}</p>
-    </div>
-    <div class="col-md-5">
-        <img src="{{ company[6]['img_src'] }}"
-            alt="{{ company[6]['name'] }} Of The Hobbit">
-    </div>
-</div>
-
-<div class="row featurette">
-    <div class="col-md-5">
-        <img src="{{ company[7]['img_src'] }}"
-            alt="{{ company[7]['name'] }} Of The Hobbit">
-    </div>
-    <div class="col-md-7">
-        <h3>{{ company[7]["name"] }}</h3>
-        <p>{{ company[7]["description"] }}</p>
-    </div>
-</div>
-
-<div class="row featurette">
-    <div class="col-md-7">
-        <h3>{{ company[8]["name"] }}</h3> 
-        <p>{{ company[8]["description"] }}</p>
-    </div>
-    <div class="col-md-5">
-        <img src="{{ company[8]['img_src'] }}"
-            alt="{{ company[8]['name'] }} Of The Hobbit">
-    </div>
-</div>
-
-<div class="row featurette">
-    <div class="col-md-5">
-        <img src="{{ company[9]['img_src'] }}"
-            alt="{{ company[9]['name'] }} Of The Hobbit">
-    </div>
-    <div class="col-md-7">
-        <h3>{{ company[9]["name"] }}</h3>
-        <p>{{ company[9]["description"] }}</p>
-    </div>
-</div>
-
-<div class="row featurette">
-    <div class="col-md-7">
-        <h3>{{ company[10]["name"] }}</h3> 
-        <p>{{ company[10]["description"] }}</p>
-    </div>
-    <div class="col-md-5">
-        <img src="{{ company[10]['img_src'] }}"
-            alt="{{ company[10]['name'] }} Of The Hobbit">
-    </div>
-</div>
-
-<div class="row featurette">
-    <div class="col-md-5">
-        <img src="{{ company[11]['img_src'] }}"
-            alt="{{ company[11]['name'] }} Of The Hobbit">
-    </div>
-    <div class="col-md-7">
-        <h3>{{ company[11]["name"] }}</h3>
-        <p>{{ company[11]["description"] }}</p>
-    </div>
-</div>
-
-<div class="row featurette">
-    <div class="col-md-7">
-        <h3>{{ company[12]["name"] }}</h3> 
-        <p>{{ company[12]["description"] }}</p>
-    </div>
-    <div class="col-md-5">
-        <img src="{{ company[12]['img_src'] }}"
-            alt="{{ company[12]['name'] }} Of The Hobbit">
-    </div>
-</div>
-
-<div class="row featurette">
-    <div class="col-md-5">
-        <img src="{{ company[13]['img_src'] }}"
-            alt="{{ company[13]['name'] }} Of The Hobbit">
-    </div>
-    <div class="col-md-7">
-        <h3>{{ company[13]["name"] }}</h3>
-        <p>{{ company[13]["description"] }}</p>
-    </div>
-</div>
 < {% endblock %}
