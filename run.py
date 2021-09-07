@@ -12,7 +12,7 @@ app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY")
 
 # Index route 
-@app.route("/")
+@app.route("/index")
 def index():
     return render_template("index.html")
 
@@ -53,10 +53,10 @@ def careers():
 
 
 # Live Preview
-# if __name__ == "__main__":
-#     app.run(
-#         host=os.environ.get("IP", "0.0.0.0"),
-#         port=int(os.environ.get("PORT", "5000")),
-#         # Never have debug=True in deployment, mainly for security reasons
-#         debug=False
-#     )
+if __name__ == "__main__":
+    app.run(
+        host=os.environ.get("IP", "0.0.0.0"),
+        port=int(os.environ.get("PORT", "5000")),
+        # Never have debug=True in deployment, mainly for security reasons
+        debug=False
+    )
