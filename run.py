@@ -53,10 +53,10 @@ def careers():
 
 
 # Live Preview
-if __name__ == "__main__":
-    app.run(
-        host=os.environ.get("IP", "0.0.0.0"),
-        port=int(os.environ.get("PORT", "5000")),
-        # Never have debug=True in deployment, mainly for security reasons
-        debug=True
-    )
+# if __name__ == "__main__":
+#     app.run(
+#         host=os.environ.get("IP", "0.0.0.0"),
+#         port=int(os.environ.get("PORT", "5000")),
+#         # Never have debug=True in deployment, mainly for security reasons
+#         debug=False
+#     )
